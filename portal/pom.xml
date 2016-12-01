@@ -9,7 +9,7 @@
 	<groupId>com.guooo.boot.case.web</groupId>
 	<artifactId>portal</artifactId>
 	<packaging>war</packaging>
-
+	<description>dubbo consumer</description>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
