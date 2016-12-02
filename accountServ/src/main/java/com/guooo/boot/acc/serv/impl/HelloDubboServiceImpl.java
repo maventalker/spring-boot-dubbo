@@ -2,7 +2,7 @@ package com.guooo.boot.acc.serv.impl;
 
 import org.springframework.stereotype.Service;
 
-import com.guooo.boot.acc.serv.HelloDubboService;
+import com.guooo.boot.I.acc.HelloDubboService;
 
 @Service("helloDubboService")
 public class HelloDubboServiceImpl implements HelloDubboService {
@@ -13,3 +13,4 @@ public class HelloDubboServiceImpl implements HelloDubboService {
 	}
 
 }
+
