@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.3.0.RELEASE</version>
+		<version>1.2.5.RELEASE</version>
 	</parent>
 
 	<groupId>com.guooo.boot.case</groupId>
@@ -16,6 +16,7 @@
 		<module>bizService</module>
 		<module>accountServ</module>
 		<module>simulation</module>
+		<module>serviceLayer</module>
 	</modules>
 	<properties>
 		<jdk.version>1.7</jdk.version>
@@ -35,13 +36,16 @@
 	</properties>
 	<dependencies>
 		<!-- spring boot admin 监控客户端，开发阶段可以关闭 -->
-		<!-- <dependency> <groupId>de.codecentric</groupId> <artifactId>spring-boot-admin-starter-client</artifactId> 
-			<version>1.3.2</version> </dependency> -->
-		<dependency>
+	<!-- <dependency> <groupId>de.codecentric</groupId> <artifactId>spring-boot-admin-starter-client</artifactId> 
+		<version>1.3.2</version> </dependency> -->
+		
+		
+		<!-- devtools与dubbo兼容性不好，使用时要关掉此引用 -->
+		<!-- <dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<optional>true</optional>
-		</dependency>
+		</dependency> -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-redis</artifactId>
@@ -80,25 +84,28 @@
 			</exclusions>
 		</dependency>
 		<dependency>
-            <groupId>org.apache.zookeeper</groupId>
-            <artifactId>zookeeper</artifactId>
-            <version>3.4.6</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.slf4j</groupId>
-                    <artifactId>slf4j-log4j12</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>log4j</groupId>
-                    <artifactId>log4j</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-		<dependency>
-			<groupId>com.101tec</groupId>
-			<artifactId>zkclient</artifactId>
-			<version>0.7</version>
+			<groupId>org.apache.zookeeper</groupId>
+			<artifactId>zookeeper</artifactId>
+			<version>3.4.6</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-log4j12</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>log4j</groupId>
+					<artifactId>log4j</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
+		<!-- <dependency> <groupId>com.101tec</groupId> <artifactId>zkclient</artifactId> 
+			<version>0.7</version> </dependency> -->
+		<dependency>
+			<groupId>com.github.sgroschupf</groupId>
+			<artifactId>zkclient</artifactId>
+			<version>0.1</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>

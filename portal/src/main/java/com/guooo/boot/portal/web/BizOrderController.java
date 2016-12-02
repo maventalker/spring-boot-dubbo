@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.guooo.boot.biz.serv.OrderService;
+import com.guooo.boot.I.order.OrderService;
 /**
  * test controller from service biz
  * @author guooo
@@ -14,6 +14,7 @@ import com.guooo.boot.biz.serv.OrderService;
 @RequestMapping("/boot/hello")
 public class BizOrderController {
 
+	@Autowired
 	OrderService orderService;
 	
 	@RequestMapping(value="query")

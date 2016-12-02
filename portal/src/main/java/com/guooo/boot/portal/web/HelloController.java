@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.guooo.boot.acc.serv.HelloDubboService;
+import com.guooo.boot.I.acc.HelloDubboService;
 
 /**
  * test controller from service account

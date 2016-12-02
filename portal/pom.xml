@@ -8,12 +8,16 @@
 	</parent>
 	<groupId>com.guooo.boot.case.web</groupId>
 	<artifactId>portal</artifactId>
-	<packaging>war</packaging>
 	<description>dubbo consumer</description>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-log4j</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -30,15 +34,20 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.guooo.boot.case.account</groupId>
-			<artifactId>accountServ</artifactId>
+			<groupId>com.guooo.boot.case</groupId>
+			<artifactId>serviceLayer</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+<!--  java.lang.ClassNotFoundException: org.springframework.data.web.config.EnableSpringDataWebSupport -->
 		<dependency>
-			<groupId>com.guooo.boot.case.biz</groupId>
-			<artifactId>bizService</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-commons</artifactId>
 		</dependency>
+<!-- org.springframework.security.config.annotation.web.configuration.EnableWebSecurity -->
+		<!-- <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency> -->
 	</dependencies>
 	<build>
 		<finalName>boot-portal</finalName>

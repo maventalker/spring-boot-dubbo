@@ -13,15 +13,14 @@
 	<!-- 提供方应用名称信息，这个相当于起一个名字，我们dubbo管理页面比较清晰是哪个应用暴露出来的 -->
 
 	<dubbo:application name="accountbiz-dubbo-provider"></dubbo:application>
-
-	<dubbo:annotation package="com.guooo.boot.acc.*" />
+	<dubbo:annotation package="com.dubbo.*" />
 
 	<!-- 使用zookeeper注册中心暴露服务地址 -->
-	<dubbo:registry protocol="zookeeper" address="zookeeper://192.168.1.21:2181" />
+	<dubbo:registry address="zookeeper://192.168.1.21:2181" />
 	<dubbo:protocol name="dubbo" port="20880" />
 	<!-- 要暴露的服务接口 -->
 
-	<dubbo:service interface="com.guooo.boot.acc.serv.HelloDubboService"
+	<dubbo:service interface="com.guooo.boot.I.acc.HelloDubboService"
 		ref="helloDubboService" />
 
 </beans>

@@ -14,7 +14,7 @@ import org.springframework.context.annotation.ImportResource;
  */
 @SpringBootApplication
 @Configuration
-@ComponentScan("com.guooo.boot.biz.*")
+@ComponentScan("com.guooo.boot.I.*,com.guooo.boot.biz.*")
 @EnableAutoConfiguration
 @ImportResource("classpath:dubbo-biz-provider.xml")
 public class BizApplication {

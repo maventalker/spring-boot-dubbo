@@ -27,5 +27,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>com.guooo.boot.case</groupId>
+			<artifactId>serviceLayer</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
   </dependencies>
 </project>

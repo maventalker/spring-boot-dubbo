@@ -14,16 +14,10 @@
 
 	<dubbo:application name="biz-dubbo-provider"></dubbo:application>
 
-	<dubbo:annotation package="com.guooo.boot.biz.*" />
-
 	<!-- 使用zookeeper注册中心暴露服务地址 -->
 
-	<dubbo:registry address="zookeeper://192.168.1.21:2181"
-		check="false" subscribe="false" register=""></dubbo:registry>
+	<dubbo:registry address="zookeeper://192.168.1.21:2181" />
 	<dubbo:protocol name="dubbo" port="20884" />
 	<!-- 要暴露的服务接口 -->
-
-	<dubbo:service interface="com.guooo.boot.biz.serv.OrderService"
-		ref="txOrderService"/>
-
+	<dubbo:service interface="com.guooo.boot.I.order.OrderService" ref="txOrderService"/>
 </beans>

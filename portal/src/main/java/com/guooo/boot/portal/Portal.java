@@ -13,8 +13,8 @@ import org.springframework.context.annotation.ImportResource;
  *
  */
 @SpringBootApplication
-@ComponentScan("com.guooo.boot.portal.*")
-@ImportResource("classpath:dubbo-portal-consumer.xml")
+@ComponentScan("com.guooo.boot.portal.web.*,com.guooo.boot.I.*")
+@ImportResource({"classpath:dubbo-portal-consumer.xml"})
 @EnableAutoConfiguration
 @Configuration
 public class Portal {
