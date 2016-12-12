@@ -6,3 +6,5 @@ Spring boot 结合 Dubbo开发前、后端服务分离的案例
 4、启动accountServ、bizService的主类作为服务的提供者，在zookerper控制台可以看到服务注册成功
 5、启动portal的主类，作为服务消费者。
 
+
+![基本代码结构说明](http://git.oschina.net/uploads/images/2016/1212/120640_aefdaabc_330875.png "在这里输入图片标题")
