@@ -8,7 +8,7 @@
 	</parent>
 
 	<groupId>com.guooo.boot.case</groupId>
-	<artifactId>pivotal-project</artifactId>
+	<artifactId>spring-boot-dubbo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<modules>
