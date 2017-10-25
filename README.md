@@ -14,3 +14,6 @@ SpringBoot结合dubbo搭建框架，来开发前、后端服务分离的案例
 
 
 ![基本代码结构说明](http://git.oschina.net/uploads/images/2016/1212/120640_aefdaabc_330875.png "在这里输入图片标题")
+
+##### 获取更多内容，请关注公众号
+![image](https://github.com/backkoms/simplemall/blob/develop/getqrcode.jpeg?raw=true)
